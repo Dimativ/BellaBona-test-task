@@ -1,0 +1,12 @@
+node_modules
+dist
+
+.prettierrc.js
+
+nextjs-bellabona-test-task/.next
+nextjs-bellabona-test-task/node_modules
+nextjs-bellabona-test-task/dist
+
+studio-bellabona-test-task/.sanity
+studio-bellabona-test-task/node_modules
+studio-bellabona-test-task/dist

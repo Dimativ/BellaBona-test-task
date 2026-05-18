@@ -1,0 +1,56 @@
+@use '../../../assets/scssVariables' as *;
+
+.section {
+  width: 100%;
+  max-width: $containerMaxWidth;
+  margin: 0 auto;
+  padding: 80px $mobilePadding;
+
+  @media (max-width: $tabletThreshold) {
+    padding: 24px $mobilePadding;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch;
+
+  @media (max-width: $tabletThreshold) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.cardWrap {
+  display: flex;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 84px;
+  padding: 33px;
+  background: #f8f7f6;
+  border-radius: 20px;
+  min-height: 260px;
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: $tabletThreshold) {
+    padding: 30px 40px;
+    min-height: 200px;
+    gap: 78px;
+  }
+}
+
+.value {
+  font-size: 74px;
+
+  @media (max-width: $tabletThreshold) {
+    font-size: 68px;
+  }
+}

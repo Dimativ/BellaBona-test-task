@@ -1,0 +1,170 @@
+@use '../../assets/scssVariables' as *;
+
+.h1 {
+  font-size: 70px;
+  line-height: 110%;
+  font-weight: 500;
+
+  @media screen and (max-width: $tabletThreshold) {
+    font-size: 38px;
+  }
+}
+
+.h2 {
+  font-size: 60px;
+  line-height: 120%;
+  font-weight: 600;
+
+  @media screen and (max-width: $tabletThreshold) {
+    font-size: 32px;
+  }
+}
+
+.h3 {
+  font-size: 40px;
+  line-height: 100%;
+  font-weight: 400;
+
+  @media screen and (max-width: $tabletThreshold) {
+    font-size: 32px;
+  }
+}
+
+.h4 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+
+  @media (max-width: $tabletThreshold) {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+.h5 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+
+  @media (max-width: $tabletThreshold) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.h6 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.p {
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 400;
+
+  @media (max-width: $tabletThreshold) {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+.label_xl {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 400;
+
+  @media (max-width: $tabletThreshold) {
+    font-size: 24px;
+    line-height: 140%;
+  }
+}
+
+.label_sm {
+  font-size: 16px;
+  line-height: 28px;
+
+  @media (max-width: $tabletThreshold) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.label_md {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+
+  @media (max-width: $tabletThreshold) {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+.nav_link {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.sup {
+  vertical-align: super;
+  color: inherit;
+  font-size: 80%;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.semiBold {
+  font-weight: 600 !important;
+}
+
+.medium {
+  font-weight: 500 !important;
+}
+
+.regular {
+  font-weight: 400 !important;
+}
+
+.white {
+  color: var(--white);
+}
+
+.light_white {
+  color: var(--light-white);
+}
+
+.red {
+  color: var(--red);
+}
+
+.black {
+  color: var(--black);
+}
+
+.side_black {
+  color: var(--side-black);
+}
+
+.partners_black {
+  color: var(--partners-black);
+}
+
+.green {
+  color: var(--green);
+}
+
+.light_green {
+  color: var(--light-green);
+}
+
+.font_figtree {
+  font-family: var(--font-figtree), sans-serif;
+}
+
+.font_inter {
+  font-family: var(--font-inter), sans-serif;
+}

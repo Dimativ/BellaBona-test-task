@@ -1,0 +1,5 @@
+{
+  "path": "../nextjs-bellabona-test-task/src/**/*.{ts,tsx,js,jsx}",
+  "schema": "../nextjs-bellabona-test-task/schema.json",
+  "generates": "../nextjs-bellabona-test-task/src/sanity/sanity.types.ts"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "bellabona-test-task",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "prepare": "husky",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dimativ/BellaBona-test-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dimativ/BellaBona-test-task/issues"
+  },
+  "homepage": "https://github.com/Dimativ/BellaBona-test-task#readme",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,scss,json,html,md}": "prettier --write"
+  }
+}

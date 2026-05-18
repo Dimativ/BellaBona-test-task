@@ -1,0 +1,22 @@
+:root {
+  /* GENERAL */
+  --white: #fff;
+  --light-white: #f9ffe9;
+
+  --red: #9a0103;
+
+  --grey: #5f6563;
+
+  --black: #000;
+  --side-black: #1a211e;
+  --partners-black: #1b1b1b;
+
+  --green: #024930;
+  --light-green: #e6ffa9;
+
+  /* BUTTONS */
+  --btn-green: #024930;
+  --btn-light-green: #e6ffa9;
+  --btn-dark-green: #002616e6;
+  --btn-red: #9a0103;
+}

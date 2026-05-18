@@ -1,0 +1,50 @@
+@use '../../assets/scssVariables' as *;
+
+.button {
+  display: flex;
+  padding: 11px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 999px;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  background-color: var(--btn-green);
+  color: var(--white);
+  height: 47px;
+
+  &:hover {
+    filter: brightness(1.15);
+  }
+
+  &:active {
+    filter: brightness(1.25);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    filter: none;
+  }
+}
+
+.darkGreen {
+  background-color: var(--btn-dark-green);
+  color: var(--light-white);
+}
+
+.lightGreen {
+  background-color: var(--btn-light-green);
+  color: var(--green);
+}
+
+.red {
+  background-color: var(--btn-red);
+  color: #fff0ed;
+}
+
+.text {
+  align-self: center;
+  color: inherit;
+}

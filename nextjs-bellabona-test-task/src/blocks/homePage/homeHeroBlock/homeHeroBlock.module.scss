@@ -1,0 +1,157 @@
+@use '../../../assets/scssVariables' as *;
+
+.hero {
+  width: 100%;
+  max-width: $containerMaxWidth;
+  margin: 0 auto;
+  padding: 40px $mobilePadding 80px;
+
+  @media (max-width: $tabletThreshold) {
+    padding: 24px $mobilePadding 40px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  align-items: stretch;
+
+  @media (max-width: $tabletThreshold) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 45px;
+  background: var(--green);
+  border-radius: 20px;
+  min-height: 540px;
+
+  @media (max-width: $tabletThreshold) {
+    padding: 28px 24px;
+    min-height: auto;
+    gap: 60px;
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (max-width: $tabletThreshold) {
+    gap: 24px;
+  }
+}
+
+.ctaLink {
+  display: inline-flex;
+  text-decoration: none;
+  align-self: flex-start;
+
+  @media (max-width: $tabletThreshold) {
+    align-self: stretch;
+  }
+}
+
+.ctaLink > * {
+  @media (max-width: $tabletThreshold) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.right {
+  position: relative;
+  min-height: 540px;
+
+  @media (max-width: $tabletThreshold) {
+    position: static;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+.imageCard {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  overflow: hidden;
+
+  @media (max-width: $tabletThreshold) {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+  }
+}
+
+.image {
+  object-fit: cover;
+}
+
+.badges {
+  position: absolute;
+  left: 20px;
+  bottom: 25px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  z-index: 2;
+
+  @media (max-width: $tabletThreshold) {
+    position: static;
+    left: auto;
+    bottom: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+  }
+}
+
+.badgeLink {
+  display: inline-flex;
+  text-decoration: none;
+  flex: 0 0 auto;
+  cursor: pointer;
+
+  @media (max-width: $tabletThreshold) {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: transparent;
+
+  @media (max-width: $tabletThreshold) {
+    width: 100%;
+  }
+}
+
+.badgeImg {
+  display: block;
+  width: auto;
+  height: 58px;
+  object-fit: contain;
+
+  @media (max-width: $tabletThreshold) {
+    height: 40px;
+    width: 100%;
+    max-width: 100%;
+  }
+}

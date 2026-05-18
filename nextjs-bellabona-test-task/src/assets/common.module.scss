@@ -1,0 +1,14 @@
+@use 'scssVariables' as *;
+@forward 'scssVariables';
+
+@mixin increaseSpecificity($class, $times: 3) {
+  $selector: '';
+
+  @for $i from 1 through $times {
+    $selector: '#{$selector}.#{$class}';
+  }
+
+  #{$selector} {
+    @content;
+  }
+}
